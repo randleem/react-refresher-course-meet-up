@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import AllMeetUpsPage from "./pages/AllMeetUps";
+import AllMeetupsPage from "./pages/AllMeetups";
 import FavouritesPage from "./pages/Favourites";
 import NewMeetUpsPage from "./pages/NewMeetUps";
 import MainNav from "./components/layout/MainNav";
@@ -16,7 +16,7 @@ function App() {
           <FavouritesPage />
         </Route>
         <Route path="/" exact>
-          <AllMeetUpsPage />
+          <AllMeetupsPage />
         </Route>
       </Switch>
     </div>
