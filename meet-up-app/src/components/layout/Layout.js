@@ -3,9 +3,9 @@ import MainNav from "./MainNav";
 
 function Layout(props) {
   return (
-    <div className={classes.main}>
+    <div>
       <MainNav />
-      <main>{props.children}</main>
+      <main className={classes.main}>{props.children}</main>
     </div>
   );
 }
