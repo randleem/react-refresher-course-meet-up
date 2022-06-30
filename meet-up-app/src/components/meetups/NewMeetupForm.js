@@ -3,6 +3,7 @@ import classes from "./NewMeetupForm.module.css";
 import Card from "../ui/Card";
 
 function NewMeetupForm(props) {
+  //you can use ref hook here to save a value and add the ref prop to the JSX
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();

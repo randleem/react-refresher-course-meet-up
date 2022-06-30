@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import classes from "./MainNav.module.css";
+import FavouritesContext from "../../store/favourites-context";
 
 function MainNav() {
+  const favouritesCtx = useContext(FavouritesContext);
   return (
     <header className={classes.header}>
       <div className={classes.logo}>React Meetups</div>
@@ -15,6 +18,9 @@ function MainNav() {
           </li>
           <li>
             <Link to="/favourites">Favourites</Link>
+            <span className={classes.badge}>
+              {favouritesCtx.totalFavourites}
+            </span>
           </li>
         </ul>
       </nav>
